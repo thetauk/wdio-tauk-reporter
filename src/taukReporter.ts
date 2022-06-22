@@ -12,7 +12,7 @@ class TaukReporter extends WDIOReporter {
     }
 
     onRunnerStart(runnerStats: RunnerStats): void {
-        this.write(`[DEBUG] The runner has started! \n`);
+        this.write(`[DEBUG] The runner has started with a CID of "${runnerStats.cid}"! \n`);
     }
 
     onSuiteStart(suiteStats: SuiteStats): void {
@@ -44,7 +44,7 @@ class TaukReporter extends WDIOReporter {
     }
 
     onRunnerEnd(runnerStats: RunnerStats): void {
-         this.write(`[DEBUG] The runner has completed! \n`);
+         this.write(`[DEBUG] The runner with a CID of "${runnerStats.cid}" has completed! \n`);
     }
 
 }
