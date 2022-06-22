@@ -12,6 +12,14 @@ class SecurePage extends Page {
     public get flashAlert () {
         return $('#flash');
     }
+
+    public get btnLogOut() {
+        return $('a[href="/logout"]');
+    }
+
+    public async logout () {
+        await this.btnLogOut.click()
+    }
 }
 
 export default new SecurePage();

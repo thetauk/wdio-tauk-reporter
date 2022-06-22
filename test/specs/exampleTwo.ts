@@ -1,7 +1,7 @@
 import LoginPage from  '../pageobjects/login.page';
 import SecurePage from '../pageobjects/secure.page';
 
-describe('My Login application', () => {
+describe('Example Test Suite Two', () => {
     it('should login with valid credentials', async () => {
         await LoginPage.open();
 
